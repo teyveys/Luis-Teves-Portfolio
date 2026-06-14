@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luis Teves | Web Developer & IT Student</title>
+    <meta name="description" content="Portfolio of Luis Teves — a web developer and IT student at De La Salle University–Dasmariñas building accessible, pixel-perfect web experiences.">
+    <meta property="og:title" content="Luis Teves | Web Developer & IT Student">
+    <meta property="og:description" content="Building accessible, pixel-perfect, and performant web experiences.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://teyveys.github.io">
+    <meta property="og:image" content="assets/images/luis-formal.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h2>LUIS TEVES</h2>
+        <div class="nav-actions">
+            <button id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/projects.html">Portfolio</a></li>
+            <li><a href="pages/services.html">Services</a></li>
+            <li><a href="pages/resume.html">Resume</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero-section container fade-in">
+        <div class="hero-text">
+            <h4>Hello, I'm</h4>
+            <h1>Luis Teves</h1>
+            <h3 class="highlight">Web Developer & IT Student</h3>
+            <p>
+                I build accessible, pixel-perfect, and performant web experiences. 
+                Currently a senior at De La Salle University–Dasmariñas.
+            </p>
+            
+            <div class="hero-buttons">
+                <a href="pages/projects.html" class="btn btn-primary">View My Work</a>
+                <a href="pages/contact.html" class="btn btn-secondary">Contact Me</a>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://github.com/teyveys" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/luis-teves-995ab5284/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/luuisteves/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="assets/images/luis-formal.jpeg" alt="Luis Teves">
+        </div>
+    </header>
+
+    <section class="container" id="featured">
+        <div class="section-header fade-in">
+            <h2>Featured Projects</h2>
+            <a href="pages/projects.html" class="view-all">View All <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="project-grid">
+            <div class="project-card fade-in">
+                <h3>Guitar Repair System</h3>
+                <p>A Capstone project using NodeJS and MongoDB to manage repair services with a chatbot integration.</p>
+                <div class="tech-badges">
+                    <span class="tech-badge">Node.js</span>
+                    <span class="tech-badge">MongoDB</span>
+                    <span class="tech-badge">Chatbot</span>
+                </div>
+                <a href="pages/projects.html" style="color: var(--accent)">View Details &rarr;</a>
+            </div>
+
+            <div class="project-card fade-in">
+                <h3>Portfolio Website</h3>
+                <p>You are looking at it! A clean, minimalist portfolio built with HTML5, CSS3, and a focus on dark mode design.</p>
+                <div class="tech-badges">
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">JavaScript</span>
+                </div>
+                <a href="pages/projects.html" style="color: var(--accent)">View Details &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Luis Teves. All rights reserved.</p>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <div class="lightbox-overlay" id="lightbox-overlay">
+        <button id="lightbox-close" aria-label="Close">&times;</button>
+        <img id="lightbox-img" src="" alt="Enlarged view">
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

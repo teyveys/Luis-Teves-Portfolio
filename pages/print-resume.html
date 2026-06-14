@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edkhrys Luis C. Teves | Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        /* ==== PRINT-FRIENDLY STYLES ==== */
+        :root {
+            --accent: #edc244; /* Your Muted Gold */
+            --text: #111;      /* Dark Black/Gray */
+            --muted: #555;     /* Lighter Gray for dates/subtitles */
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-print-color-adjust: exact; 
+            print-color-adjust: exact;
+        }
+
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            background: #555; /* Dark bg for browser view */
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        /* The A4 Paper Look */
+        .resume-paper {
+            background: white;
+            width: 210mm;
+            min-height: 297mm;
+            padding: 40px 50px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            color: var(--text);
+        }
+
+        /* Header Layout */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--text);
+            padding-bottom: 20px;
+        }
+
+        .header-text h1 {
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .contact-info p {
+            margin-bottom: 5px;
+            font-size: 0.95rem;
+        }
+
+        .contact-info strong {
+            color: var(--muted);
+        }
+
+        /* Image Styling */
+        .profile-photo {
+            width: 130px;
+            height: 130px;
+            object-fit: cover; /* Prevents stretching */
+            border-radius: 5px; /* Slight rounded corner */
+            border: 1px solid #ddd;
+        }
+
+        /* Section Headings (Matches your Portfolio) */
+        h2 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            color: var(--text);
+            border-bottom: 2px solid var(--accent); /* The Gold Line */
+            margin-top: 25px;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+        }
+
+        /* General Text */
+        p, li {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        /* Experience & Education Items */
+        .item-block {
+            margin-bottom: 15px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2px;
+        }
+
+        .item-title {
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .item-subtitle {
+            font-style: italic;
+            color: var(--muted);
+        }
+
+        /* References Grid */
+        .ref-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        /* PDF Print Rules */
+        @media print {
+            body { 
+                background: white; 
+                padding: 0; 
+            }
+            .resume-paper {
+                box-shadow: none;
+                width: 100%;
+                margin: 0;
+                padding: 30px 40px; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-paper">
+        
+        <header>
+            <div class="header-text">
+                <h1>Edkhrys Luis C. Teves</h1>
+                <div class="contact-info">
+                    <p><strong>Address:</strong> Imus City, Cavite, Philippines</p>
+                    <p><strong>Contact:</strong> +63 927 334 0958</p>
+                    <p><strong>Email:</strong> luisc.teves@gmail.com</p>
+                </div>
+            </div>
+            <div>
+                <img src="../assets/images/tevesPic1.jpg" alt="Luis Photo" class="profile-photo">
+            </div>
+        </header>
+
+        <section>
+            <h2>Career Objective</h2>
+            <p>A driven, focused, and resourceful student eager to contribute to the growth of an organization. My diligence, adaptability, and enthusiasm for learning allow me to effectively accomplish assigned tasks, despite limited experience.</p>
+        </section>
+
+        <section style="display: flex; gap: 40px;">
+            <div style="flex: 1;">
+                <h2>My Skills</h2>
+                <ul>
+                    <li>Utilize Java, Python, C#, and PHP</li>
+                    <li>Optimistic and proactive problem solver</li>
+                    <li>Excellent written and verbal communication</li>
+                    <li>Proficiency in Microsoft Word and Excel</li>
+                </ul>
+            </div>
+            <div style="flex: 1;">
+                <h2>My Hobbies</h2>
+                <ul style="list-style-type: decimal;">
+                    <li>Dancing HipHop</li>
+                    <li>Singing</li>
+                    <li>Working out</li>
+                    <li>Playing basketball and volleyball</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            
+            <div class="item-block">
+                <div class="item-header">
+                    <span class="item-title">Bachelor of Science in Information Technology</span>
+                    <span class="item-title">2022 – Present</span>
+                </div>
+                <div class="item-subtitle">De La Salle University, Dasmariñas</div>
+            </div>
+
+            <div class="item-block">
+                <div class="item-header">
+                    <span class="item-title">Senior High School</span>
+                    <span class="item-title">2020 – 2022</span>
+                </div>
+                <div class="item-subtitle">Tropical Innovative School of Excellence</div>
+            </div>
+
+        <section>
+            <h2>Work Experience</h2>
+
+            <div class="item-block">
+                <div class="item-header">
+                    <span class="item-title">IT Support/ Technician Intern</span>
+                    <span class="item-title">02/16/2026 – 05/14/2026</span>
+                </div>
+                <div class="item-subtitle" style="margin-bottom: 5px;">Aon Insurance & Reinsurance Brokers Philippines, Inc.</div>
+                <ul>
+                    <li>Provisioned and configured IT hardware, including wiping, re-imaging, and building employee
+                        laptops, and executing bulk factory resets for CISCO IP telephony systems.</li>
+                    <li>Delivered direct helpdesk support to internal employees by troubleshooting hardware and software
+                        issues, while assisting with IT asset tracking and peer training for new hires.</li>
+                </ul>
+            </div>
+
+            <div class="item-block">
+                <div class="item-header">
+                    <span class="item-title">Ads Quality Rater</span>
+                    <span class="item-title">08/21/2023 – 03/26/2024</span>
+                </div>
+                <div class="item-subtitle" style="margin-bottom: 5px;">WeLocalize</div>
+                <ul>
+                    <li>Assessed and reviewed digital content for relevance, clarity, and adherence to guidelines.</li>
+                    <li>Conducted research on user engagement and content optimization.</li>
+                    <li>Applied analytical thinking to evaluate the effectiveness of online materials.</li>
+                </ul>
+            </div>
+
+            <div class="item-block">
+                <div class="item-header">
+                    <span class="item-title">Personalized Internet Ads Assessor</span>
+                    <span class="item-title">04/19/2022 – 07/25/2023</span>
+                </div>
+                <div class="item-subtitle" style="margin-bottom: 5px;">Telus International</div>
+                <ul>
+                    <li>Evaluated online advertisements for accuracy, readability, and audience targeting.</li>
+                    <li>Provided critical feedback to improve ad content and structure.</li>
+                    <li>Strengthened research and analytical skills through trend analysis.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>References</h2>
+            <div class="ref-grid">
+                
+                <div class="item-block">
+                    <div class="item-title">Gerald Ian A. Olaes</div>
+                    <div class="item-subtitle">Training Quality Manager, SIA Engineering Corp.</div>
+                    <div>gianolaes@gmail.com</div>
+                </div>
+
+                <div class="item-block">
+                    <div class="item-title">Christopher William Gulfan</div>
+                    <div class="item-subtitle">Principal, Tropical Innovative School (TISE)</div>
+                    <div>willgulfan@gmail.com</div>
+                </div>
+
+                <div class="item-block">
+                    <div class="item-title">Dorothy Joyce Omido</div>
+                    <div class="item-subtitle">Quality Engineer</div>
+                    <div>djuomido@gmail.com</div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>

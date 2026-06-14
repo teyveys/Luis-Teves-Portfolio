@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Luis Teves</title>
+    <meta name="description" content="Learn more about Luis Teves — a 4th-year IT student at DLSU-Dasmariñas with a passion for web development and mobile app solutions.">
+    <meta property="og:title" content="About Me | Luis Teves">
+    <meta property="og:description" content="IT student and web developer passionate about creating real-world solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://teyveys.github.io/pages/about.html">
+    <meta property="og:image" content="../assets/images/mypicture.jfif">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h2>LUIS TEVES</h2>
+        <div class="nav-actions">
+            <button id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="projects.html">Portfolio</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        
+        <section class="about-intro fade-in" style="display: flex; gap: 3rem; align-items: center; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+                <h1>About Me</h1>
+                <p>
+                    I am a graduating Bachelor of Science in Information Technology student at <strong>De La Salle University–Dasmariñas</strong>. 
+                    I am a driven and resourceful developer with a focus on Web Development and Mobile App solutions.
+                </p>
+                <br>
+                <p>
+                    My passion lies in creating systems that solve real-world problems, whether it's a 
+                    Guitar Repair Management System or custom website solutions. When I'm not coding, 
+                    I enjoy playing basketball, table tennis, and working out.
+                </p>
+            </div>
+            <div style="flex: 1; min-width: 300px; text-align: center; padding-top: 20px;">
+                <img src="../assets/images/luis-gradpic.jpeg" alt="Luis Lifestyle" style="width: 100%; max-width: 400px; border-radius: 12px; opacity: 0.8;">
+            </div>
+        </section>
+
+        <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 3rem 0;">
+
+        <section class="fade-in">
+            <h2 style="color: var(--accent);">Skills Overview</h2>
+            <div class="skills-container">
+                <span class="skill-tag">HTML5 & CSS3</span>
+                <span class="skill-tag">JavaScript (ES6+)</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Flutter & Dart</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">Squarespace</span>
+                <span class="skill-tag">Git & GitHub</span>
+                <span class="skill-tag">UI/UX Design</span>
+            </div>
+        </section>
+
+        <section style="margin-top: 4rem;" class="fade-in">
+            <h2 style="color: var(--accent); margin-bottom: 2rem;">Experience Timeline</h2>
+            
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 – 2026</div>
+                    <div class="timeline-content">
+                        <h3>BS Information Technology</h3>
+                        <h4>De La Salle University–Dasmariñas</h4>
+                        <p>Web Development Major</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Feb 2026 – May 2026</div>
+                    <div class="timeline-content">
+                        <h3>IT Support/ Technician Intern</h3>
+                        <h4>Aon Insurance & Reinsurance Brokers Philippines, Inc.</h4>
+                        <p>Provisioned and configured IT hardware and delivered direct helpdesk support to internal employees.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">Aug 2023 – Mar 2024</div>
+                    <div class="timeline-content">
+                        <h3>Ads Quality Rater</h3>
+                        <h4>Welocalize</h4>
+                        <p>Evaluated online advertising accuracy and relevance to improve AI models.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Apr 2022 – July 2023</div>
+                    <div class="timeline-content">
+                        <h3>Personalized Internet Ads Assessor</h3>
+                        <h4>TELUS International</h4>
+                        <p>Analyzed ad data patterns and improved search engine result relevance.</p>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Luis Teves. All rights reserved.</p>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <div class="lightbox-overlay" id="lightbox-overlay">
+        <button id="lightbox-close" aria-label="Close">&times;</button>
+        <img id="lightbox-img" src="" alt="Enlarged view">
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

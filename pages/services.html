@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Luis Teves Portfolio</title>
+    <meta name="description" content="Web development, design, and consultation services offered by Luis Teves.">
+    <meta property="og:title" content="Services | Luis Teves">
+    <meta property="og:description" content="High-quality web solutions tailored to your specific needs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://teyveys.github.io/pages/services.html">
+    <meta property="og:image" content="../assets/images/mypicture.jfif">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h2>LUIS TEVES</h2>
+        <div class="nav-actions">
+            <button id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Portfolio</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="fade-in">My Services</h1>
+        <p style="text-align: center; color: var(--text-muted); margin-bottom: 3rem;" class="fade-in">
+            High-quality web solutions tailored to your specific needs.
+        </p>
+
+        <div class="project-grid">
+            <div class="project-card fade-in" style="text-align: center;">
+                <i class="fa-solid fa-code" style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;"></i>
+                <h3>Web Development</h3>
+                <p>Building responsive, fast, and secure websites using HTML, CSS, JS, and Node.js.</p>
+            </div>
+
+            <div class="project-card fade-in" style="text-align: center;">
+                <i class="fa-solid fa-paintbrush" style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;"></i>
+                <h3>Web Design</h3>
+                <p>Creating clean, modern, and user-friendly layouts (UI/UX) for your brand.</p>
+            </div>
+
+            <div class="project-card fade-in" style="text-align: center;">
+                <i class="fa-solid fa-chalkboard-user" style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;"></i>
+                <h3>Consultation</h3>
+                <p>Helping fellow students or clients understand web technologies and debugging.</p>
+            </div>
+        </div>
+
+        <section style="margin-top: 5rem;" class="fade-in">
+            <h2 style="text-align: center; color: var(--accent);">My Workflow</h2>
+            <div class="workflow-container">
+                <div class="step">
+                    <span>01</span>
+                    <h3>Consultation</h3>
+                    <p>Discussing requirements.</p>
+                </div>
+                <div class="step">
+                    <span>02</span>
+                    <h3>Planning</h3>
+                    <p>Wireframing & Logic.</p>
+                </div>
+                <div class="step">
+                    <span>03</span>
+                    <h3>Development</h3>
+                    <p>Coding the solution.</p>
+                </div>
+                <div class="step">
+                    <span>04</span>
+                    <h3>Delivery</h3>
+                    <p>Testing & Deployment.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Luis Teves. All rights reserved.</p>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <div class="lightbox-overlay" id="lightbox-overlay">
+        <button id="lightbox-close" aria-label="Close">&times;</button>
+        <img id="lightbox-img" src="" alt="Enlarged view">
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

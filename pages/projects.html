@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Luis Teves</title>
+    <meta name="description" content="Explore the portfolio of Luis Teves — web development and design projects including a Guitar Repair System, Gym Booking App, and more.">
+    <meta property="og:title" content="Projects | Luis Teves">
+    <meta property="og:description" content="A selection of recent work in web development and design.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://teyveys.github.io/pages/projects.html">
+    <meta property="og:image" content="../assets/images/portfolio.PNG">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2>LUIS TEVES</h2>
+        <div class="nav-actions">
+            <button id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html" class="active">Portfolio</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="fade-in">My Projects</h1>
+        <p style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;" class="fade-in">
+            A selection of my recent work in web development and design.
+        </p>
+
+        <div class="filter-tabs fade-in">
+            <button class="filter-tab active" data-filter="all">All</button>
+            <button class="filter-tab" data-filter="web">Web</button>
+            <button class="filter-tab" data-filter="mobile">Mobile</button>
+            <button class="filter-tab" data-filter="design">Design</button>
+        </div>
+        
+        <div class="project-grid">
+            
+            <div class="project-card fade-in" data-category="web">
+                <img src="../assets/images/project-fretmojo.png" alt="FretMojo Guitar Repair" class="project-thumb">
+                
+                <h3>Revolutionizing Guitar Repairs: A Web-Based Service Management System for FretMojo</h3>
+                <p>A Capstone project using React.js and Supabase to manage repair services, track customers, and schedule appointments with chatbot integration.</p>
+                <div class="tech-badges">
+                    <span class="tech-badge">React.js</span>
+                    <span class="tech-badge">Supabase</span>
+                    <span class="tech-badge">Postgres</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://fretmojo.vercel.app" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Source</a>
+                </div>
+            </div>
+
+            <div class="project-card fade-in" data-category="web">
+                <img src="../assets/images/project-goldsgym.png" alt="Gold's Gym Booking" class="project-thumb">
+
+                <h3>Appointment Booking System</h3>
+                <p>A front-end web application for Gold's Gym allowing members to book services and view upcoming appointments.</p>
+                <div class="tech-badges">
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/teyveys" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Source</a>
+                </div>
+            </div>
+
+            <div class="project-card fade-in" data-category="mobile">
+                <img src="../assets/images/project-healthmate.jpg" alt="Health Mate App" class="project-thumb">
+                
+                <h3>Health Mate</h3>
+                <h4 style="font-size: 1rem; color: var(--text-muted); margin-bottom: 0.5rem;">Personalized Medicine & Daily Health Log App</h4>
+                <p>A comprehensive mobile application designed to help users manage medication schedules, track daily health stats, and maintain wellness consistency.</p>
+                <div class="tech-badges">
+                    <span class="tech-badge">Flutter</span>
+                    <span class="tech-badge">Dart</span>
+                    <span class="tech-badge">Firebase</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/teyveys" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Source</a>
+                </div>
+            </div>
+
+            <div class="project-card fade-in" data-category="design">
+                <img src="../assets/images/portfolio.PNG" alt="This Portfolio Website" class="project-thumb">
+                <h3>This Portfolio Website</h3>
+                <p>A clean, minimalist, dark-mode portfolio built from scratch using semantic HTML5 and modern CSS3 with a responsive layout.</p>
+                <div class="tech-badges">
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="../index.html" style="color: var(--accent)">View Live &rarr;</a>
+                    <a href="https://github.com/teyveys" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Source</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Luis Teves. All rights reserved.</p>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <div class="lightbox-overlay" id="lightbox-overlay">
+        <button id="lightbox-close" aria-label="Close">&times;</button>
+        <img id="lightbox-img" src="" alt="Enlarged view">
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
